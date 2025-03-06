@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sigmar&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --tipografia_gruesa: "Sigmar", serif;
+    --tipografia_delgada: "Lato", serif;
+
+
+    --negro: #23272a;
+    --morado: #5765f2;
+    --gris: #f6f6f6;
+
+}
+
+
+body{
+    font-family: var(--tipografia_delgada);
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+.margen{
+    padding: 15px;
+}
+header{
+    background-color: #23272a;
+}
+.logo_discord{
+    /* border: 1px red solid; */
+    width: 124px;
+}
+.logo_discord img{
+    width: 100%;
+}
+.contenedor_menu ul{
+    /* border: 1px yellow solid; */
+    list-style: none;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    gap: 15px;
+}
+/* .contenedor_menu ul li{
+    border: 3px orange solid;
+} */
+.contenedor_menu ul li a{
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.contenedor_cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* border: 3px red solid; */
+}
+
+.btn_blanco{
+    padding: 7px 16px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: var(--negro);
+    border-radius: 40px;
+    display: inline-block;
+    font-weight: 700px;
+}
+
+.contenedor_slide{
+    background-color: var(--negro);
+    color: white;
+    /* border: 1px green solid; */
+}
+.contenedor_slide_titulo{
+    font-size: 50px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: var(--tipografia_gruesa);
+    /* border: 1px gold solid; */
+}
+.btn_morado{
+    background-color: var(--morado);
+    color: white;
+    border-radius: 40px;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.contenedor_slide span{
+    /* border: 1px pink solid; */
+    padding-left: 20px;
+}
+
+.union_btn_span{
+    /* border: 1px green solid; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+main{
+    /* border: 2px blue solid; */
+    max-width: 550px;
+}
+.contenedor_slide_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor_slide_info p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.contenedor_slide_info figure{
+    /* border: 2px black solid; */
+    max-width: 550px;
+    margin: 80px;
+    width: 100%;
+}
+.contenedor_slide_info figure img{
+    width: 100%;
+    display: block;
+}
+.icono_menu{
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    display: none;
+}
+.contenedor_login{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* Desarrollo  */
+.contenedor_articulos{
+    /* border: 3px purple solid;     */
+    display: flex;
+    justify-content: center ;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+.contenedor1_articulo{
+    /* border: 3px #5765f2 solid; */
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.informacion{
+    /* border: 1px gray solid; */
+    /* padding: 10px; */
+    background-color: var(--gris);
+    border-radius: 20px;
+    width: 580px;
+    max-height: 600px;
+    padding: 56px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.informacion p{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.informacion a{
+    padding: 16px 32px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--negro);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 28px;
+    margin-top: 10px;
+}
+.informacion figure{
+    width: 412px;
+    margin: auto;
+
+}
+.informacion figure img{
+    display: block;
+    margin-top: 64px;
+    width: 100%;
+}
+
+.texto{
+    padding: 48px 40px;
+    text-align: start;
+}
+
+.texto h2{
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+}
+    
+.texto p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+    margin-top: 24px;
+}
+
+/* footer */
+footer{
+    background-color: var(--negro);
+    padding: 80px 0 64px;
+}
+/* .contenedor_footer{
+    border: 1px green solid;
+} */
+
+.contenedor1_footer{
+    /* border: 1px orange solid; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contenedor1_footer span{
+    color: var(--morado);
+    font-weight: 500;
+}
+.contenedor1_footer ul{
+    width: 180px;
+}
+.contenedor1_footer ul li{
+    margin-top: 8px;
+    list-style: none;
+}
+.contenedor1_footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    display: inline-block;
+}
+
+.lengua{
+    margin: 24px 0px;
+}
+.lengua a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+}
+.redes_sociales i{
+    color: white;
+    font-size: 24px;
+    margin-right: 25px;
+}
+/* .contenedor2_footer{
+    border: 2px red solid;
+
+} */
+.linea{
+    border: 1px blue solid;
+}
+.final{
+    /* border: 6px pink solid; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 32px; */
+    margin-top: 32px;
+}
+.final a{
+    background-color: var(--morado);
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    padding: 7px 16px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+}
+

@@ -1,0 +1,117 @@
+@media (max-width: 950px){
+    /* Testear si funciona el media */
+    /* body{
+        background-color: red;
+    } */
+
+    .contenedor_menu {
+        display: none;  
+    }
+    .icono_menu{
+        display: block;
+    }
+
+    .union_btn_span{
+        flex-direction: column;
+       
+        gap: 5px;
+    }
+}
+
+@media (max-width: 900px){
+    .main{
+        max-width: 450px;
+    }
+    
+
+}
+@media (max-width: 850px){
+    .contenedor_slide_info{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .contenedor_slide_info figure{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .contenedor_slide{
+        padding: 20px;
+    }
+    .contenedor_slide_titulo{
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 500;
+        font-family: var(--tipografia_gruesa);
+        /* border: 1px gold solid; */
+    }
+    .contenedor_slide_info p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .union_btn_span span{
+        margin: 20px;
+    }
+
+    .contenedor_articulos {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        padding: 20px;
+    }
+
+    .contenedor1_articulo {
+        max-width: 100%; 
+        border: none; 
+    }
+
+    .texto h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 17px;
+    }
+    .texto p{
+        font-size: 17px;
+        line-height: 24px;
+        /* margin-top: 24px; */
+    }
+    .informacion a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .informacion figure {
+        width: 350px;
+    }
+    .contenedor_footer{
+        padding: 20px;
+    }
+    .idioma{
+        display: flex;
+        /* border: 3px purple solid; */
+        flex-direction: column;
+    }
+    .redes_sociales{
+        display: flex;
+        /* border: 1px red solid; */
+    }
+    .contenedor1_footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+    .contenedor1_footer ul{
+        /* border: 3px gray solid; */
+        width: 200px;
+    }
+    /* .final{
+        margin-top: 20px;
+    } */
+}
